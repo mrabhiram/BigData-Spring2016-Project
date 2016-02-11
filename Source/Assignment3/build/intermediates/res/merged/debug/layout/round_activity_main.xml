@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs5543.tutorial.sensors_wearable.MainActivity"
+    tools:deviceIds="wear_round">
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Steps :"
+        android:id="@+id/texts"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="step"
+        android:id="@+id/steps"
+        android:layout_above="@+id/heart"
+        android:layout_toEndOf="@+id/texts"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/texth"
+        android:text="HeartRate :"
+        android:layout_alignBaseline="@+id/heart"
+        android:layout_alignBottom="@+id/heart"
+        android:layout_toStartOf="@+id/steps" />
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="rate"
+        android:id="@+id/heart"
+        android:layout_below="@+id/texts"
+        android:layout_alignEnd="@+id/steps" />
+
+</RelativeLayout>
